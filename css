@@ -7,7 +7,93 @@ h2 {
     font-size: 2rem;
     color: #000;
 }
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("./img/bg-masthead.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+/* aiym */
 .testimonials {
     background-color: #f8f9fa; 
 }
@@ -28,4 +114,97 @@ h2 {
     color: #666;
     font-weight: 400;
     line-height: 1.6;
+}
+
+/* zalina */
+/* Общее стили для формы и кнопки */
+
+.call-to-action {
+    position: relative;
+    background: url("https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/src/assets/img/bg-masthead.jpg?raw=true") no-repeat center center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 2rem;
+    /* Добавляем отступ снизу */
+}
+
+.call-to-action .overlay {
+    position: absolute;
+    background-color: #80878e;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .3;
+    z-index: 0;
+    /* Это необходимо, чтобы фон был ниже формы */
+}
+
+
+/* Стили для формы */
+
+form {
+    z-index: 2;
+    position: relative;
+    /* Это позволяет взаимодействовать с элементами формы */
+}
+
+
+/* Коррекция для поля ввода и кнопки */
+
+.form-control {
+    background-color: rgb(255, 255, 255);
+    /* Поле будет иметь полупрозрачный фон */
+    border-radius: 30px;
+    /* Добавление округлых углов для поля ввода */
+    padding-left: 20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0099ff;
+    border: #0099ff;
+    border-radius: 30px;
+    /* Округление углов кнопки */
+}
+
+.btn-primary:hover {
+    background-color: #007acc;
+    /* Цвет кнопки при наведении */
+}
+
+
+/* Для футера */
+
+
+/* Убираем нижнее подчеркивание у ссылок */
+
+footer .list-inline-item a {
+    color: #0099ff;
+    text-decoration: none;
+    /* Убираем подчеркивание */
+}
+
+footer .list-inline-item a:hover {
+    color: #007acc;
+}
+
+
+/* Увеличиваем размер иконок социальных сетей */
+
+footer .list-inline-item a i {
+    font-size: 1.9rem;
+    /* Увеличиваем размер иконок */
+}
+
+
+/* Передвигаем текст в футере немного левее */
+
+footer .text-muted {
+    margin-right: 100px;
+    /* Настроено на 20px, вы можете изменить это значение по своему усмотрению */
 }
