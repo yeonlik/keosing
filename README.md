@@ -1,2 +1,1 @@
-# keosing
-project
+our own project    
