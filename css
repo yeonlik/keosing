@@ -1,16 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.lato-light {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 body {
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    color: #333 !important; 
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h2 {
     font-size: 2rem;
     color: #000;
 }
-body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 h1,
 h2,
 h3,
@@ -20,45 +41,150 @@ h6 {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
-
-header.masthead {
-  position: relative;
-  background-color: #343a40;
-  background: url("https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/src/assets/img/bg-masthead.jpg?raw=true") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+div {
+    display: block;
+    unicode-bidi: isolate;
 }
 
-header.masthead .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
-}
+      .head {
+       margin: 0;
+       font-family: Arial, sans-serif;
+       text-align: center;
+       background-image: url('https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-masthead.jpg'); 
+       background-size: cover;
+       display: block;
+       background-position: center;
+       color: #fff;
+       position: relative;
+       height: 500px;
+    
+        }
 
-header.masthead h1 {
-  font-size: 2rem;
-}
+            h1 {
+                font-size: 2rem;
+            }
+        
+                h1 {
+                    font-size: 3rem;
+                }
+        
 
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-}
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #000;
+        }
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 2px; /* Добавим немного интервала между буквами */
+        }
+        .sign-in {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .sign-in:active {
+            transform: scale(0.95); /* Уменьшение при нажатии */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .sign-in:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            padding: 20px;
+            margin-top: 50px;
+            
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight:300; 
+            font-weight: bold;/* Более тонкий шрифт */
+            line-height: 1.2;
+            display: block;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            margin-top: 0;
+            margin-bottom: 3rem !important;
+            text-align: center !important;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            unicode-bidi: isolate;
+            gap: 10px; /* Пространство между полем и кнопкой */
+            flex-wrap: wrap; /* элементыпереноситься на новую строку */
+            position: relative;
+            text-align: center !important;
+        }
+        input {
+            padding: 10px;
+            font-size: 1rem;
+            width: 200px;
+            font-weight: 300;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            flex: 0 0 100%;
+            max-width: 100%;
+            min-width: 100px;
+            padding-left: 20px;
+            width: 100%;
+            margin-bottom: .5rem 
+            
+        }
+        button {
+            display: inline-block;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: .5rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            align-items: flex-start;
+            pointer-events: none;
 
+           
+        }
+        button:active {
+            transform: scale(1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Адаптив для телефонов */
+        @media (max-width: 600px) {
+            .form-container {
+                flex-direction: column; /* Расположение элементов в колонку */
+                gap: 15px; /* Увеличиваем расстояние между элементами */
+            }
+           
+                ; /* Ширина элементов на телефоне */
+                input, button {
+                    width: 100%
+                } 
+            }
+/* showcase  */
 .showcase .showcase-text {
   padding: 3rem;
+  text-align: center;
 }
 
 .showcase .showcase-img {
@@ -87,6 +213,7 @@ header.masthead h1 {
 
 .features-icons .features-icons-item .features-icons-icon i {
   font-size: 4.5rem;
+  color: #000;
 }
 
 .features-icons .features-icons-item:hover .features-icons-icon i {
@@ -115,6 +242,11 @@ header.masthead h1 {
     font-weight: 400;
     line-height: 1.6;
 }
+
+  /* testimonial-item img круг */
+  img {
+    border-radius: 50%;
+  }
 
 /* zalina */
 /* Общее стили для формы и кнопки */
@@ -168,7 +300,7 @@ form {
     color: #fff;
     background-color: #0099ff;
     border: #0099ff;
-    border-radius: 30px;
+    border-radius: 5px;
     /* Округление углов кнопки */
 }
 
@@ -200,7 +332,6 @@ footer .list-inline-item a i {
     font-size: 1.9rem;
     /* Увеличиваем размер иконок */
 }
-
 
 /* Передвигаем текст в футере немного левее */
 
