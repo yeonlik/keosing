@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #000;
+}
+
+.testimonials {
+    background-color: #f8f9fa; 
+}
+
+.testimonial-item img {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+}
+
+.testimonial-item h5 {
+    font-size: 1.25rem; 
+    margin-bottom: 10px;
+}
+
+.testimonial-item p {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 1.6;
+}
